@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_transaction_PrgPrjSelectMenu" items="${prgprjselectmenus}" z="4r/OT11MwMzn/rvDwPQv1XcNpJI=">
+        <table:table data="${prgprjselectmenus}" id="l_com_hpe_ao_domain_transaction_PrgPrjSelectMenu" path="/prgprjselectmenus" z="x8PrbedsDSUR4yv2aesxtM9SOcM=">
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_createUser" property="createUser" z="jVQOWr98d/jixcMumblVQotVxFw="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_program" property="program" z="Syv55z/bTRGpnYiZRlOPkEK2tAg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_project" property="project" z="mXtxXEACIDXbXWPgdXjxxJ7GMHA="/>
+        </table:table>
+    </page:list>
+</div>

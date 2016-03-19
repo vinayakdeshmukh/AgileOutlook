@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:spring="http://www.springframework.org/tags" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <util:panel id="pageActions" title="pageActions">
+        <table class="pageLayout noBorder">
+            <tr>
+                <td class="noBorder">
+                    <spring:url value="/projects/${sessionScope.sessionCache.projectId}" var="project_show"/>
+                    <input id="btnFeatureList" onclick="window.location.href='${project_show}'" type="button" value="Back to Project"/>
+                </td>
+                <td class="noBorder autoWidthLabel width50">
+                    <c:if test="${! empty sessionScope.sessionCache.project}">
+                        <label>Project :</label>
+                        <c:out value="${sessionScope.sessionCache.project.name}"/>
+                    </c:if>
+                </td>
+                <td align="right" class="noBorder">
+                    <spring:url value="/capacityentrys?form" var="capacity_entry"/>
+                    <input id="btnCapacityEntry" onclick="window.location.href='${capacity_entry}'" type="button" value="Add/Update Capacity Entry"/>
+                </td>
+            </tr>
+        </table>
+    </util:panel>
+    <page:list id="pl_com_hpe_ao_domain_transaction_Capacity" items="${capacitys}" z="OUoKizkE03ionE7ducHsKb164cE=">
+        <table:table data="${capacitys}" id="l_com_hpe_ao_domain_transaction_Capacity" path="/capacitys" z="UY5n69/Tg9fCKgz264+BccjJSWY=">
+            <table:column date="true" dateTimePattern="${capacity_effectivedate_date_format}" id="c_com_hpe_ao_domain_transaction_Capacity_effectiveDate" property="effectiveDate" z="w3QSe/A2PR0cSGbzeaCx2X7pJDQ="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_teamCountBaseline" property="teamCountBaseline" z="SeEBIg6G438dM14LINJ2EFlPQvg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_teamSizeBaseline" property="teamSizeBaseline" z="OXUcIVymiiojSY+1Q2q9h5gujXw="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_teamAvailabilityBaseline" property="teamAvailabilityBaseline" z="jZKKLhIrBpS0C40nm3ZU8oyzGmM="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_pointCapacityBaseline" property="pointCapacityBaseline" z="jZKKLhIrBpS0C40nm3ZU8oyzGmM="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_teamCountActual" property="teamCountActual" z="SeEBIg6G438dM14LINJ2EFlPQvg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_teamSizeActual" property="teamSizeActual" z="OXUcIVymiiojSY+1Q2q9h5gujXw="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_teamAvailabilityActual" property="teamAvailabilityActual" z="jZKKLhIrBpS0C40nm3ZU8oyzGmM="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_pointCapacityActual" property="pointCapacityActual" z="jZKKLhIrBpS0C40nm3ZU8oyzGmM="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_project" property="project" render="false" z="user-managed"/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Capacity_entryComments" property="entryComments" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+    <script type="text/javascript">
+  
+  dojo.require("dijit.Dialog");
+     dojo.addOnLoad(function() {
+     	var tables = document.getElementsByTagName("table");  			//alert(tables.length);
+     	var rows = tables[2].getElementsByTagName("tr");				//alert(rows.length);
+        for(i = 0; i &lt; rows.length; i++){
+          var cols = rows[i].getElementsByTagName("td");          	//alert("Cols.length = " + cols.length);
+          if(cols.length == 12){
+        	  cols[4].style.backgroundColor = "#3399ff";
+          	  cols[8].style.backgroundColor = "#6bb33e";
+          }
+        }
+       
+      });
+    </script>
+</div>

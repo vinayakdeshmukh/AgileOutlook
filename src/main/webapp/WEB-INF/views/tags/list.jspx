@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_framework_Tag" items="${tags}" z="0MmosOr9w6oR1h0Dbo1EAOdCRf8=">
+        <table:table data="${tags}" id="l_com_hpe_ao_domain_framework_Tag" path="/tags" z="eQzCuFFV8euIwyV6WrmX4lq3Qss=">
+            <table:column id="c_com_hpe_ao_domain_framework_Tag_name" property="name" z="LHkFvLk7G6WJ8Ld+ob4bA2MJspk="/>
+            <table:column id="c_com_hpe_ao_domain_framework_Tag_description" property="description" z="DsQvlwTr6h2FRFevlpcsfOhawn8="/>
+            <table:column id="c_com_hpe_ao_domain_framework_Tag_type" property="type" z="w48zbUF9wTlt8DdNJDCSTnhdjW4="/>
+            <table:column id="c_com_hpe_ao_domain_framework_Tag_category" property="category" z="O1ISlRmnZ0cGSWvW6fCFrZE9uvw="/>
+        </table:table>
+    </page:list>
+</div>

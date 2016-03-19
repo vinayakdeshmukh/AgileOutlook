@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_framework_Tag" object="${tag}" path="/tags" z="naCAsqOUKSQu1SNmxXlZxPv+foI=">
+        <field:display field="name" id="s_com_hpe_ao_domain_framework_Tag_name" object="${tag}" z="hANGXeIHanselpFM2RJ1Dbh3WIU="/>
+        <field:display field="description" id="s_com_hpe_ao_domain_framework_Tag_description" object="${tag}" z="cg/ht6DeKA5zhiZm2K2QDVo7u04="/>
+        <field:display field="type" id="s_com_hpe_ao_domain_framework_Tag_type" object="${tag}" z="u2Vx4RyiFcAGV3WsHZ+EYBiIMEE="/>
+        <field:display field="category" id="s_com_hpe_ao_domain_framework_Tag_category" object="${tag}" z="3VKTH6RWWrsIDMx4T+HtmuIqIy8="/>
+    </page:show>
+</div>

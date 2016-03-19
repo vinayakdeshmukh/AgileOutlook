@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hpe_ao_domain_transaction_Project" modelAttribute="project" path="/projects" versionField="Version" z="OYkA9aunLKT+3PttvrZ0coOIUNk=">
+        <field:input field="name" id="c_com_hpe_ao_domain_transaction_Project_name" max="30" min="3" required="true" z="E1u95LZK01DjLQVNZNfixxLt+rU="/>
+        <field:textarea field="description" id="c_com_hpe_ao_domain_transaction_Project_description" z="H0a9gMBv4YCQ0I0hJy1qO329oQo="/>
+        <field:select field="tag" id="c_com_hpe_ao_domain_transaction_Project_tag" itemValue="id" items="${tags}" multiple="true" path="/tags" z="UvCWNDA24dtSiDactkdrJWjb1uQ="/>
+        <field:select field="status" id="c_com_hpe_ao_domain_transaction_Project_status" items="${statuses}" path="statuses" z="a1xrbRJx6palQWyz91R/2f+iWoc="/>
+        <field:datetime dateTimePattern="${project_startdatebaseline_date_format}" field="startDateBaseline" id="c_com_hpe_ao_domain_transaction_Project_startDateBaseline" z="ojCUFeT6zDRo+otsV6ApkR3hqdw="/>
+        <field:datetime dateTimePattern="${project_enddatebaseline_date_format}" field="endDateBaseline" id="c_com_hpe_ao_domain_transaction_Project_endDateBaseline" z="4vCcreZclbVJg8nPMolGJA8bdQ0="/>
+        <field:datetime dateTimePattern="${project_startdateactual_date_format}" field="startDateActual" id="c_com_hpe_ao_domain_transaction_Project_startDateActual" z="qPIUrN9ogtSJ9Q5/xM2UdNQT2wA="/>
+        <field:datetime dateTimePattern="${project_enddateactual_date_format}" field="endDateActual" id="c_com_hpe_ao_domain_transaction_Project_endDateActual" z="Xy0R4N7zznqy+u0z3vbr1LVFX1I="/>
+        <field:input field="leadName" id="c_com_hpe_ao_domain_transaction_Project_leadName" max="30" z="XnmfOrIOrujXeTgPfG1Zkzgdfmc="/>
+        <field:select field="program" id="c_com_hpe_ao_domain_transaction_Project_program" itemValue="id" items="${programs}" path="/programs" required="true" z="m6ro7AAWm9P4mlh5F3FVeacQgDo="/>
+        <field:input field="teamAveragePointDaily" id="c_com_hpe_ao_domain_transaction_Project_teamAveragePointDaily" validationMessageCode="field_invalid_number" z="YKyBHpFQ2uo39n8wR0ESDrCd1Io="/>
+        <field:input field="averagePointsPerStory" id="c_com_hpe_ao_domain_transaction_Project_averagePointsPerStory" validationMessageCode="field_invalid_number" z="K9njbBdT6LlyPr6qZcioouGwSV8="/>
+        <field:input field="averageTeamCount" id="c_com_hpe_ao_domain_transaction_Project_averageTeamCount" validationMessageCode="field_invalid_number" z="E9jN3Y+68anLldF4nlrRlunijls="/>
+        <field:input field="averageTeamSize" id="c_com_hpe_ao_domain_transaction_Project_averageTeamSize" validationMessageCode="field_invalid_number" z="FJL8rFMMQ7rfpJOIWv7csXkKDCI="/>
+    </form:update>
+</div>

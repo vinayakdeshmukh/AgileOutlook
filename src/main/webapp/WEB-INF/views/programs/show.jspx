@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_Program" object="${program}" path="/programs" z="U0Qy86eUji1ZUmmPKvnxF4rf5LU=">
+        <field:display field="name" id="s_com_hpe_ao_domain_transaction_Program_name" object="${program}" z="1+uXlI5ssAACjAIhk2JGNXF13Vc="/>
+        <field:display field="description" id="s_com_hpe_ao_domain_transaction_Program_description" object="${program}" z="/NWKCDa+QZrx4dBOetJMkhYY/4o="/>
+        <field:display field="tag" id="s_com_hpe_ao_domain_transaction_Program_tag" object="${program}" z="Usrs1oNMewJN5v2IY1LeAbNtxU8="/>
+        <field:display field="status" id="s_com_hpe_ao_domain_transaction_Program_status" object="${program}" z="Jg554cl102VBWD2Bi+4HhTUdSs4="/>
+        <field:display date="true" dateTimePattern="${program_startdatebaseline_date_format}" field="startDateBaseline" id="s_com_hpe_ao_domain_transaction_Program_startDateBaseline" object="${program}" z="WRxMJ0ZuViaxGso+wIMU5CBPYWo="/>
+        <field:display date="true" dateTimePattern="${program_enddatebaseline_date_format}" field="endDateBaseline" id="s_com_hpe_ao_domain_transaction_Program_endDateBaseline" object="${program}" z="W0bPAZ0jiQMGHBlfuhXj4jFpSBA="/>
+        <field:display date="true" dateTimePattern="${program_startdateactual_date_format}" field="startDateActual" id="s_com_hpe_ao_domain_transaction_Program_startDateActual" object="${program}" z="2S2LhYBjnNDonhLylj/mSK1AGZ4="/>
+        <field:display date="true" dateTimePattern="${program_enddateactual_date_format}" field="endDateActual" id="s_com_hpe_ao_domain_transaction_Program_endDateActual" object="${program}" z="UnOrTrDYbEUXRGvGhffaS1fyBxo="/>
+        <field:display field="orgName" id="s_com_hpe_ao_domain_transaction_Program_orgName" object="${program}" z="eTkIdgbPPLCuwx6hWTvHhghVZv4="/>
+    </page:show>
+</div>

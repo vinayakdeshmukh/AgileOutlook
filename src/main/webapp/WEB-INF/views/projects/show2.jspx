@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_Project" object="${project}" path="/projects" z="zkNkVAkWtb/NmCcKZLUnQgz7l7w=">
+        <field:display field="name" id="s_com_hpe_ao_domain_transaction_Project_name" object="${project}" z="hY084r8r2LRwlBCCXUEHzexcIZg="/>
+        <field:display field="description" id="s_com_hpe_ao_domain_transaction_Project_description" object="${project}" z="HP8ynqHZmeN9j4PcgwXrfTOEUdI="/>
+        <field:display field="tag" id="s_com_hpe_ao_domain_transaction_Project_tag" object="${project}" z="g3zll05MgsfWMe9JUzOv6mP85/8="/>
+        <field:display field="status" id="s_com_hpe_ao_domain_transaction_Project_status" object="${project}" z="mYKjeIGrfHDm8opTQIq0+x11bGM="/>
+        <field:display date="true" dateTimePattern="${project_startdatebaseline_date_format}" field="startDateBaseline" id="s_com_hpe_ao_domain_transaction_Project_startDateBaseline" object="${project}" z="9BzVWYaF60oARdI+vcJ1I+0iCcA="/>
+        <field:display date="true" dateTimePattern="${project_enddatebaseline_date_format}" field="endDateBaseline" id="s_com_hpe_ao_domain_transaction_Project_endDateBaseline" object="${project}" z="3xqTbiPWCj4noq4zGODBCuD853Y="/>
+        <field:display date="true" dateTimePattern="${project_startdateactual_date_format}" field="startDateActual" id="s_com_hpe_ao_domain_transaction_Project_startDateActual" object="${project}" z="K58XLzcpzAUsvrIFF/b9jTy/dWw="/>
+        <field:display date="true" dateTimePattern="${project_enddateactual_date_format}" field="endDateActual" id="s_com_hpe_ao_domain_transaction_Project_endDateActual" object="${project}" z="w0zj2WtBkiq3wwQ96qXUZ3K+2GE="/>
+        <field:display field="leadName" id="s_com_hpe_ao_domain_transaction_Project_leadName" object="${project}" z="F8VY5ZzVwLW3ovFhJ0xgpc4obww="/>
+        <field:display field="program" id="s_com_hpe_ao_domain_transaction_Project_program" object="${project}" z="qqIGbIye7jE8/pieHsZonbxvxoY="/>
+        <field:display field="teamAveragePointDaily" id="s_com_hpe_ao_domain_transaction_Project_teamAveragePointDaily" object="${project}" z="wr37V7/UDEWy6VZE9m1/aLZemSw="/>
+        <field:display field="averagePointsPerStory" id="s_com_hpe_ao_domain_transaction_Project_averagePointsPerStory" object="${project}" z="A6HQUNLljYYFD+g5H/FPrDiQrmI="/>
+        <field:display field="averageTeamCount" id="s_com_hpe_ao_domain_transaction_Project_averageTeamCount" object="${project}" z="rKCa3Du2d9C3Zt5tx42yWfHl69Y="/>
+        <field:display field="averageTeamSize" id="s_com_hpe_ao_domain_transaction_Project_averageTeamSize" object="${project}" z="MtHitd3Ma8Sm12VrmFB2NgoqHJg="/>
+    </page:show>
+</div>

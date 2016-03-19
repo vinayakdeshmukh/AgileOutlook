@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hpe_ao_domain_transaction_ProjectRelease" modelAttribute="projectRelease" path="/projectreleases" versionField="Version" z="E5FGAjp7l1sf/SsCS4jpm+j1OW0=">
+        <field:input field="name" id="c_com_hpe_ao_domain_transaction_ProjectRelease_name" max="30" min="3" required="true" z="dIJxisq219VCJwlOlNg7PHjYsxk="/>
+        <field:textarea field="description" id="c_com_hpe_ao_domain_transaction_ProjectRelease_description" z="NYKS0Xrwo9Fx8rYqZJZEDvv2etQ="/>
+        <field:select field="tag" id="c_com_hpe_ao_domain_transaction_ProjectRelease_tag" itemValue="id" items="${tags}" multiple="true" path="/tags" z="/I/WN4vYHbV3B9H15RItnbiks9o="/>
+        <field:select field="status" id="c_com_hpe_ao_domain_transaction_ProjectRelease_status" items="${statuses}" path="statuses" z="KcYJGrK0PiYezG3shBVmlgQXKfc="/>
+        <field:datetime dateTimePattern="${projectRelease_startdatebaseline_date_format}" field="startDateBaseline" id="c_com_hpe_ao_domain_transaction_ProjectRelease_startDateBaseline" z="oZ964pjH3vsYYIC8ZolM8jVITrY="/>
+        <field:datetime dateTimePattern="${projectRelease_enddatebaseline_date_format}" field="endDateBaseline" id="c_com_hpe_ao_domain_transaction_ProjectRelease_endDateBaseline" z="84jgwdvoF74FusiRhWv6auchXtQ="/>
+        <field:datetime dateTimePattern="${projectRelease_startdateactual_date_format}" field="startDateActual" id="c_com_hpe_ao_domain_transaction_ProjectRelease_startDateActual" z="mYbvidR5wheLigMHdnRdikAaevY="/>
+        <field:datetime dateTimePattern="${projectRelease_enddateactual_date_format}" field="endDateActual" id="c_com_hpe_ao_domain_transaction_ProjectRelease_endDateActual" z="8bGBYgoJtZOLtYSnlQvKtIdKrQE="/>
+        <field:input field="leadName" id="c_com_hpe_ao_domain_transaction_ProjectRelease_leadName" max="30" z="unXBvQsE8Dn2tckOrct1zflf5mE="/>
+        <field:select field="project" id="c_com_hpe_ao_domain_transaction_ProjectRelease_project" itemValue="id" items="${projects}" path="/projects" required="true" z="zeK4x8rg3qq4nJGKRvGb9rSx1ic="/>
+        <field:input field="durationSITBaseline" id="c_com_hpe_ao_domain_transaction_ProjectRelease_durationSITBaseline" validationMessageCode="field_invalid_number" z="Yq2ob6dBkr4dPcucIghd+tSfIZY="/>
+        <field:input field="durationUATBaseline" id="c_com_hpe_ao_domain_transaction_ProjectRelease_durationUATBaseline" validationMessageCode="field_invalid_number" z="MKo2PZN76BUIk9RLxFcoe+Vaa5c="/>
+        <field:input field="durationIMPBaseline" id="c_com_hpe_ao_domain_transaction_ProjectRelease_durationIMPBaseline" validationMessageCode="field_invalid_number" z="bFIZmlQs5OUc8yE8ksWHf4VlBYc="/>
+        <field:datetime dateTimePattern="${projectRelease_golivedatebaseline_date_format}" field="goLiveDateBaseline" id="c_com_hpe_ao_domain_transaction_ProjectRelease_goLiveDateBaseline" z="kSkNdfvRyowZoS/87jH03gOongA="/>
+        <field:input field="durationSITActual" id="c_com_hpe_ao_domain_transaction_ProjectRelease_durationSITActual" validationMessageCode="field_invalid_number" z="pX9+mImXNSwlr+C7Oit6TO85yZk="/>
+        <field:input field="durationUATActual" id="c_com_hpe_ao_domain_transaction_ProjectRelease_durationUATActual" validationMessageCode="field_invalid_number" z="Y4oO0VJOWEfiNaViNtG8UPnQcXM="/>
+        <field:input field="durationIMPActual" id="c_com_hpe_ao_domain_transaction_ProjectRelease_durationIMPActual" validationMessageCode="field_invalid_number" z="IWQlTq0j/SIvfBJ6P2Qp5ru/q34="/>
+        <field:datetime dateTimePattern="${projectRelease_golivedateactual_date_format}" field="goLiveDateActual" id="c_com_hpe_ao_domain_transaction_ProjectRelease_goLiveDateActual" z="wZTTVkTzQkt3Erund8m9seucoTo="/>
+    </form:update>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hpe_ao_domain_transaction_CapacityEntry" modelAttribute="capacityEntry" path="/capacityentrys" versionField="Version" z="m8H9RyYlMKg8Q9xJRSarVq7vuN0=">
+        <field:select field="project" id="c_com_hpe_ao_domain_transaction_CapacityEntry_project" itemValue="id" items="${projects}" path="/projects" required="true" z="cBjmcaG3TMd5VEjQl8MhKo0TxQs="/>
+        <field:datetime dateTimePattern="${capacityEntry_startdate_date_format}" field="startDate" id="c_com_hpe_ao_domain_transaction_CapacityEntry_startDate" required="true" z="uNAbY8Y2f0IFB1NWbxo+JSBhrzU="/>
+        <field:datetime dateTimePattern="${capacityEntry_enddate_date_format}" field="endDate" id="c_com_hpe_ao_domain_transaction_CapacityEntry_endDate" z="aIiQb/iW52kJcISz2XrG9UarD6g="/>
+        <field:select field="capacityEntryType" id="c_com_hpe_ao_domain_transaction_CapacityEntry_capacityEntryType" items="${capacityentrytypes}" path="capacityentrytypes" required="true" z="Zi2bF7fAiNhekMpM9fyEbd9L1dU="/>
+        <field:input field="teamCount" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamCount" required="true" validationMessageCode="field_invalid_number" z="M2DwPSzQy+09WPOkQURIHF5b7uU="/>
+        <field:input field="teamSize" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamSize" required="true" validationMessageCode="field_invalid_number" z="kNZHaqnJhwJuIl7jMCiHi18PZrw="/>
+        <field:input field="teamAvailability" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamAvailability" required="true" validationMessageCode="field_invalid_number" z="ddN4QKewh0P3p6kl0aTLMcbbEIk="/>
+        <field:input field="teamAveragePointDaily" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamAveragePointDaily" required="true" validationMessageCode="field_invalid_number" z="SCqezlqikUfmzV2JWkR8LvQ3g28="/>
+        <field:input field="pointCapacity" id="c_com_hpe_ao_domain_transaction_CapacityEntry_pointCapacity" validationMessageCode="field_invalid_number" z="IlsWsq0Mh5k9NibsGZV9o+uL3+I="/>
+        <field:input field="factor1" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor1" validationMessageCode="field_invalid_number" z="fKXKtsHqMBKwaSeGmK5LunpZrxQ="/>
+        <field:input field="factor1Description" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor1Description" z="owI64U5d0Lr0JaAZdDEER/z2588="/>
+        <field:input field="factor2" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor2" validationMessageCode="field_invalid_number" z="XKsNtOHp07SaU7ndlEHteM+MtOU="/>
+        <field:input field="factor2Description" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor2Description" z="WS0VpIbfAVCVqktt6Eek8NTKn/c="/>
+        <field:input field="factor3" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor3" validationMessageCode="field_invalid_number" z="stuN819wzMQClKPAtAHCqVb3kXQ="/>
+        <field:input field="factor3Description" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor3Description" z="m3P/5eGNnyrU+RVH3PXUOvPvY70="/>
+        <field:textarea field="entryComments" id="c_com_hpe_ao_domain_transaction_CapacityEntry_entryComments" z="MvMTBBdeA/dJa20KSHeuskiRObU="/>
+    </form:update>
+</div>

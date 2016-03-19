@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="capacitys/list">
+        <put-attribute name="body" value="/WEB-INF/views/capacitys/list.jspx"/>
+    </definition>
+<definition extends="default" name="capacitys/show">
+        <put-attribute name="body" value="/WEB-INF/views/capacitys/show.jspx"/>
+    </definition>
+<definition extends="default" name="capacitys/create">
+        <put-attribute name="body" value="/WEB-INF/views/capacitys/create.jspx"/>
+    </definition>
+<definition extends="default" name="capacitys/update">
+        <put-attribute name="body" value="/WEB-INF/views/capacitys/update.jspx"/>
+    </definition>
+</tiles-definitions>

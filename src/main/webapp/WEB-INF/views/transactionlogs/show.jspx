@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_framework_TransactionLog" object="${transactionlog}" path="/transactionlogs" z="TV2ak1nt7B7Rqclx0gdSKWRMhNM=">
+        <field:display field="entityName" id="s_com_hpe_ao_domain_framework_TransactionLog_entityName" object="${transactionlog}" z="7zmZyFYhjHNoodCXqnu9kpjwAbk="/>
+        <field:display field="entiyKey1" id="s_com_hpe_ao_domain_framework_TransactionLog_entiyKey1" object="${transactionlog}" z="Nzu62GTFRC+c+T7jH3IaBQ8uLrE="/>
+        <field:display field="entityKey2" id="s_com_hpe_ao_domain_framework_TransactionLog_entityKey2" object="${transactionlog}" z="gjmIQn1VhdnRgUKIjBEfI47ue6U="/>
+        <field:display field="logType" id="s_com_hpe_ao_domain_framework_TransactionLog_logType" object="${transactionlog}" z="VnFmWExwbOfl1d7hL9fDVmT3Vqk="/>
+        <field:display field="logUser" id="s_com_hpe_ao_domain_framework_TransactionLog_logUser" object="${transactionlog}" z="YTLbTReNL1FoFiTL7QuejebBFI4="/>
+        <field:display date="true" dateTimePattern="${transactionLog_logtimestamp_date_format}" field="logTimestamp" id="s_com_hpe_ao_domain_framework_TransactionLog_logTimestamp" object="${transactionlog}" z="AZw3phM5ODHfUhwg7Xax09Eam3o="/>
+        <field:display field="logData" id="s_com_hpe_ao_domain_framework_TransactionLog_logData" object="${transactionlog}" z="SSd+/Va88AA5rI8Baig6uKDCTb0="/>
+    </page:show>
+</div>

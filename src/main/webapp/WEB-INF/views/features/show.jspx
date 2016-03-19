@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_Feature" object="${feature}" path="/features" z="Y2QLw4GMRBt1zgLnk4h1lNmfkss=">
+      <div>
+      <div class="floatPanel width100"><div class="floatPanel width50">
+        <field:display field="name" id="s_com_hpe_ao_domain_transaction_Feature_name" object="${feature}" z="s29Z/iTCwCocvoou98drEpsndRM="/>
+        <field:display field="application" id="s_com_hpe_ao_domain_transaction_Feature_application" object="${feature}" z="O9BuKqIhfr6t2s1jZnZHmx+cdQ0="/>
+        <field:display field="projectRelease" id="s_com_hpe_ao_domain_transaction_Feature_projectRelease" object="${feature}" z="RhpSNV7bk5vumozzjsFYIi0IV4g="/>
+        <field:display field="status" id="s_com_hpe_ao_domain_transaction_Feature_status" object="${feature}" z="LXtkf+8RcszozfDV11HJ1TWze2s="/>
+      </div>
+      <div class="floatPanel width50">
+        <field:display field="leadName" id="s_com_hpe_ao_domain_transaction_Feature_leadName" object="${feature}" z="qwbBBBCCzUcfxEnE0xlzckuqoI0="/>
+        <field:display field="tag" id="s_com_hpe_ao_domain_transaction_Feature_tag" object="${feature}" z="8HzZkw6KlSnIBiy5anV+0JnfkmU="/>
+        <field:display field="description" id="s_com_hpe_ao_domain_transaction_Feature_description" object="${feature}" z="cZ4zbTcMhroc/DqmFN008JlRHwM="/>
+      </div></div>
+      
+      <div class="floatPanel width100"><table class="pageLayout"><tr><th>Baseline</th><th>Actual</th></tr><tr><td>
+        <field:display date="true" dateTimePattern="${feature_startdatebaseline_date_format}" field="startDateBaseline" id="s_com_hpe_ao_domain_transaction_Feature_startDateBaseline" object="${feature}" z="3yPBA0i6hgdHRCYIwsWvAUF1TeM="/>
+        <field:display date="true" dateTimePattern="${feature_enddatebaseline_date_format}" field="endDateBaseline" id="s_com_hpe_ao_domain_transaction_Feature_endDateBaseline" object="${feature}" z="2wiaISHncQYtl04w6aqSsC6DGls="/>
+        <field:display field="storyCountBaseline" id="s_com_hpe_ao_domain_transaction_Feature_storyCountBaseline" object="${feature}" z="CkTV7KTHR+kVjoloB6ZYOP6qHSw="/>
+        <field:display field="storyPointBaseline" id="s_com_hpe_ao_domain_transaction_Feature_storyPointBaseline" object="${feature}" z="1wfGIWzo30IUWugxG6YwjlDrxyA="/>
+      </td>
+      <td>
+        <field:display date="true" dateTimePattern="${feature_startdateactual_date_format}" field="startDateActual" id="s_com_hpe_ao_domain_transaction_Feature_startDateActual" object="${feature}" z="JjSmFtpVMQ1UIA4jtbHev4cWvl8="/>
+        <field:display date="true" dateTimePattern="${feature_enddateactual_date_format}" field="endDateActual" id="s_com_hpe_ao_domain_transaction_Feature_endDateActual" object="${feature}" z="IxbpqBE196eRxK8uQGVh1Jd4zfU="/>
+        <field:display field="storyCountActual" id="s_com_hpe_ao_domain_transaction_Feature_storyCountActual" object="${feature}" z="UOKKodhJjN8OXEOxfgSSuEb/Qco="/>
+        <field:display field="storyPointActual" id="s_com_hpe_ao_domain_transaction_Feature_storyPointActual" object="${feature}" z="PI+rVYjPWYNvoDonPOzmMqwUinY="/>
+      </td></tr></table></div>
+      </div>
+    </page:show>
+</div>

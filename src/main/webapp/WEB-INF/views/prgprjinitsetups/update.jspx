@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hpe_ao_domain_transaction_PrgPrjInitSetup" modelAttribute="prgPrjInitSetup" path="/prgprjinitsetups" versionField="Version" z="nXSAx31gt1UbS6s69IxJnjaDzEQ=">
+        <field:input field="program1" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_program1" max="30" min="3" required="true" z="p54d06RIqlSCLmzeJOrDBIn7C0g="/>
+        <field:input field="orgName" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_orgName" max="30" min="3" required="true" z="/5MLJgJgOQe87nCFzS5+On6wCLk="/>
+        <field:datetime dateTimePattern="${prgPrjInitSetup_startdatebaseline_date_format}" field="startDateBaseline" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_startDateBaseline" required="true" z="vQrknwpDZIP7nuJ63aGAVMTewSE="/>
+        <field:input field="project11" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11" max="30" required="true" z="la26oUAJKVfh1K0bgBrWutcENcM="/>
+        <field:input field="project11TeamCount" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11TeamCount" required="true" validationMessageCode="field_invalid_number" z="Ess4mZdBwTg+euDg5DznJPhwwfs="/>
+        <field:input field="project11TeamSize" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11TeamSize" required="true" validationMessageCode="field_invalid_number" z="+DbBGNLthQTk0wZsKvyCOLNwjFo="/>
+        <field:input field="project11TeamAveragePointDaily" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11TeamAveragePointDaily" required="true" validationMessageCode="field_invalid_number" z="oRc04Z4ro4nkfJC/i5olDOVitRU="/>
+        <field:input field="release111" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_release111" max="30" required="true" z="ECt4EGYuP3235RVCnll6EL6I9SM="/>
+        <field:input field="project12" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project12" max="30" z="rnR1AO8+H4sdaDADJFqID8tTmhM="/>
+        <field:input field="project12TeamCount" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project12TeamCount" validationMessageCode="field_invalid_number" z="rmbm7hTsj29hdbsi3jvTkzFu37g="/>
+        <field:input field="project12TeamSize" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project12TeamSize" validationMessageCode="field_invalid_number" z="DB1oWX1zc0Pq6E8GmNNm4xBYMLc="/>
+        <field:input field="project12TeamAveragePointDaily" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project12TeamAveragePointDaily" validationMessageCode="field_invalid_number" z="NpVTSvCByYxyxZQgv/C9Wo+/k+8="/>
+        <field:input field="release121" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_release121" max="30" z="k8muPCvEONbqI/edMDxI9CNtne4="/>
+        <field:input field="project13" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project13" max="30" z="SJjVtheFwcoS+mxerZw4r4kSoD0="/>
+        <field:input field="project13TeamCount" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project13TeamCount" validationMessageCode="field_invalid_number" z="LzrynW1sHZ37z79isVHGqK/3SqA="/>
+        <field:input field="project13TeamSize" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project13TeamSize" validationMessageCode="field_invalid_number" z="0I1vXwpKn7wde5lOaXWJYQbkNHw="/>
+        <field:input field="project13TeamAveragePointDaily" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project13TeamAveragePointDaily" validationMessageCode="field_invalid_number" z="yjCQDhePesMNjBxxBWFd3KrfkCc="/>
+        <field:input field="release131" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_release131" max="30" z="04ry953hqDtludk3z/Ni9eZPGqw="/>
+        <field:input field="application111" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application111" max="30" z="iOWYOPJIDK+RqrdazTCK0ipoGiY="/>
+        <field:input field="application112" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application112" max="30" z="r2AWzufsgmjvhZosbQO5WNWMGf8="/>
+        <field:input field="application113" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application113" max="30" z="pVLObU/ZxDfBrJJvvBWBvDY+5uo="/>
+        <field:input field="application114" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application114" max="30" z="xp2zsDXZtmgZV3M/6HGTwWudKwA="/>
+        <field:input field="application121" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application121" max="30" z="v2YsTLgn4z8kpM4VkIK4CG19CQw="/>
+        <field:input field="application122" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application122" max="30" z="hO092vCV2FwSHT5V8jOg4AQIZuQ="/>
+        <field:input field="application123" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application123" max="30" z="J8aJy/4jWqwFulWhUq9OnBIct48="/>
+        <field:input field="application124" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application124" max="30" z="OD1zLmvwr/76+qg9FW4SWrRjS/g="/>
+        <field:input field="application131" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application131" max="30" z="GTa459MyP/qtF5cJBY3amvRiUXw="/>
+        <field:input field="application132" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application132" max="30" z="k2N1uyURFyzI4PLRA8irvO2rOfY="/>
+        <field:input field="application133" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application133" max="30" z="ym9X1vW9zGViZBJc+rZu4OurFYA="/>
+        <field:input field="application134" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_application134" max="30" z="kaS+v4vlYtiQ0XL2C5D95XcLH6M="/>
+    </form:update>
+</div>

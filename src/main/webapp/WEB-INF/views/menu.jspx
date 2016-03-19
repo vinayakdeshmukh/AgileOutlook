@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_transactionlog" z="J+houwemdJ3nnrFp3+7JA0QWnag=">
+            <menu:item id="i_transactionlog_new" messageCode="global_menu_new" url="/transactionlogs?form" z="O9XZts+bA3l8GmNKjTaSWueX5Ek="/>
+            <menu:item id="i_transactionlog_list" messageCode="global_menu_list" url="/transactionlogs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="iZOseuYxotzLJuXlqM1LQMmA+2o="/>
+        </menu:category>
+        <menu:category id="c_capacity" z="7J210SFMfeVBOqq8HwnO5nEtBpQ=">
+            <menu:item id="i_capacity_new" messageCode="global_menu_new" url="/capacitys?form" z="/dQyOTxAT8Gxv2n5jdHkdYUj16c="/>
+            <menu:item id="i_capacity_list" messageCode="global_menu_list" url="/capacitys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aYaOyWj9a18oSPqkbNszRfu5mdo="/>
+        </menu:category>
+        <menu:category id="c_progressentry" z="Z83kEVUkJiwtTkCuD4DgykRBJ3Y=">
+            <menu:item id="i_progressentry_new" messageCode="global_menu_new" url="/progressentrys?form" z="qRChbsmOzuPRqqntf65WT6h1Sc0="/>
+            <menu:item id="i_progressentry_list" messageCode="global_menu_list" url="/progressentrys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DrsDtX/B2mjDTw1lHa3K8RDZnAE="/>
+        </menu:category>
+        <menu:category id="c_capacityentry" z="/uZ8+mbEx7FRl8Jo07pmBJttgs4=">
+            <menu:item id="i_capacityentry_new" messageCode="global_menu_new" url="/capacityentrys?form" z="aIMTCt8/OcaR0IBA6/kUh3NH7Xs="/>
+            <menu:item id="i_capacityentry_list" messageCode="global_menu_list" url="/capacityentrys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="udfHtbIxjmy1OipwLA+By0NDisE="/>
+        </menu:category>
+        <menu:category id="c_prgprjinitsetup" z="WFJ0QsXnFTVAgirNWMyas+qxiRg=">
+            <menu:item id="i_prgprjinitsetup_new" messageCode="global_menu_new" url="/prgprjinitsetups?form" z="1vzrF0l3DsgICpjtiKADIegeWgM="/>
+            <menu:item id="i_prgprjinitsetup_list" messageCode="global_menu_list" url="/prgprjinitsetups?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YSFvb0SsINVPFEgpU+iwPsC6/a4="/>
+        </menu:category>
+        <menu:category id="c_program" z="YGxVV4/fAoI1UpA5Qj+HrGbzkYw=">
+            <menu:item id="i_program_new" messageCode="global_menu_new" url="/programs?form" z="zDcnKu0MxAKfjglkepWRPV+CgbM="/>
+            <menu:item id="i_program_list" messageCode="global_menu_list" url="/programs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Wo9hPjCt4LuJjE285foaXnjcGTM="/>
+        </menu:category>
+        <menu:category id="c_feature" z="sfVZVpjsajZKTcSlcqU5lzBNNAs=">
+            <menu:item id="i_feature_new" messageCode="global_menu_new" url="/features?form" z="nkUg8YOo/5+JJYr1WrdOO2/sDMc="/>
+            <menu:item id="i_feature_list" messageCode="global_menu_list" url="/features?page=1&amp;size=${empty param.size ? 10 : param.size}" z="1niOv42xGyossrqVRYTIgr9T+e8="/>
+        </menu:category>
+        <menu:category id="c_application" z="4v4FPlUyinuLgFejxhQ/SjlcitQ=">
+            <menu:item id="i_application_new" messageCode="global_menu_new" url="/applications?form" z="W6dSe8TyFw8+ywm9LhgQ1DA8abs="/>
+            <menu:item id="i_application_list" messageCode="global_menu_list" url="/applications?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MylNK+kA8g14QbZ9BJYvRIJxnyc="/>
+        </menu:category>
+        <menu:category id="c_tag" z="zbrDBteXk3LlkQMQy3xXpSv2428=">
+            <menu:item id="i_tag_new" messageCode="global_menu_new" url="/tags?form" z="c2MR5d7dttBSgnPxMMH7oOEDl6Q="/>
+            <menu:item id="i_tag_list" messageCode="global_menu_list" url="/tags?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HsTcxZ80PNENgslZ1+b/pv8MYug="/>
+        </menu:category>
+        <menu:category id="c_project" z="u0PzRIwMDmEv/J6b8vbKakXGIdQ=">
+            <menu:item id="i_project_new" messageCode="global_menu_new" url="/projects?form" z="1BazRC1rLnod0a+MpP1flWTvehA="/>
+            <menu:item id="i_project_list" messageCode="global_menu_list" url="/projects?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GHL05c3Rvr+eKDgRCk3Ttak0W+g="/>
+        </menu:category>
+        <menu:category id="c_prgprjselectmenu" z="NQmbusFajvxVYKQTpw8nfYYtiio=">
+            <menu:item id="i_prgprjselectmenu_new" messageCode="global_menu_new" url="/prgprjselectmenus?form" z="4XB0edZop2gb8Srh6KRrSeUa39U="/>
+            <menu:item id="i_prgprjselectmenu_list" messageCode="global_menu_list" url="/prgprjselectmenus?page=1&amp;size=${empty param.size ? 10 : param.size}" z="n5LpDqZM4LHwXL/pfPe0fsCoyKM="/>
+        </menu:category>
+        <menu:category id="c_projectrelease" z="fIbQPrE9WOlD14DpjmrLs4+SIDk=">
+            <menu:item id="i_projectrelease_new" messageCode="global_menu_new" url="/projectreleases?form" z="Y3Y2NJTb9gtuh0B0mSpp2fRwkpo="/>
+            <menu:item id="i_projectrelease_list" messageCode="global_menu_list" url="/projectreleases?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SSV9+au77PMdrFJqFI0cMRX4FXU="/>
+        </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__bulkuploadindex_id" messageCode="global_generic" url="/bulkupload/index" z="VJvblzsfRy/J7+TEWaXoHk06nwQ="/>
+            <menu:item id="i_controller__releasesummaryindex_id" messageCode="global_generic" url="/releasesummary/index" z="Ar3CBXu3w29Np4Rn6NpTeZ4+teY="/>
+        </menu:category>
+    </menu:menu>
+</div>

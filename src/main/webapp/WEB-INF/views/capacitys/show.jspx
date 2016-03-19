@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_Capacity" object="${capacity}" path="/capacitys" z="6gpYjwlS0RUV0gzagFNvzVgauMM=">
+        <field:display date="true" dateTimePattern="${capacity_effectivedate_date_format}" field="effectiveDate" id="s_com_hpe_ao_domain_transaction_Capacity_effectiveDate" object="${capacity}" z="VCjSYzDnhSEa5V7V9Vrdh1c64wU="/>
+        <field:display field="entryComments" id="s_com_hpe_ao_domain_transaction_Capacity_entryComments" object="${capacity}" z="6/KT8BJ6DAa355nlwexHD5gAb3Y="/>
+        <field:display field="project" id="s_com_hpe_ao_domain_transaction_Capacity_project" object="${capacity}" z="AO94UhKn8/Ohy3yZe3F42BlZja0="/>
+        <field:display field="teamCountBaseline" id="s_com_hpe_ao_domain_transaction_Capacity_teamCountBaseline" object="${capacity}" z="P0dqj7Ia97rgqQgmVaaXkYBYl4I="/>
+        <field:display field="teamSizeBaseline" id="s_com_hpe_ao_domain_transaction_Capacity_teamSizeBaseline" object="${capacity}" z="blAcGZ3nHhLYiEWaEr6qBwuG3+Q="/>
+        <field:display field="teamAvailabilityBaseline" id="s_com_hpe_ao_domain_transaction_Capacity_teamAvailabilityBaseline" object="${capacity}" z="vI7ijlm0VJsNHv5N13OmZXOoWS0="/>
+        <field:display field="teamAveragePointDailyBaseline" id="s_com_hpe_ao_domain_transaction_Capacity_teamAveragePointDailyBaseline" object="${capacity}" z="ewEvxfiLLsT9awKHNLedM5GJty0="/>
+        <field:display field="pointCapacityBaseline" id="s_com_hpe_ao_domain_transaction_Capacity_pointCapacityBaseline" object="${capacity}" z="IP3dcmFP6/8dpOTxJ3opVQUVk8U="/>
+        <field:display field="teamCountActual" id="s_com_hpe_ao_domain_transaction_Capacity_teamCountActual" object="${capacity}" z="1PK5CeIboxnNXxltveaShYg2swY="/>
+        <field:display field="teamSizeActual" id="s_com_hpe_ao_domain_transaction_Capacity_teamSizeActual" object="${capacity}" z="51Awpy5SuCmXkK+ZN9Mb3fNYihw="/>
+        <field:display field="teamAvailabilityActual" id="s_com_hpe_ao_domain_transaction_Capacity_teamAvailabilityActual" object="${capacity}" z="ejILktjExVa6aZlkPsQu419novU="/>
+        <field:display field="pointCapacityActual" id="s_com_hpe_ao_domain_transaction_Capacity_pointCapacityActual" object="${capacity}" z="czxqU+4TtlspPJXxZvMxq+x1h3I="/>
+        <field:display field="factor1" id="s_com_hpe_ao_domain_transaction_Capacity_factor1" object="${capacity}" z="tej3s6TLRRYfKjGhpcod9YxWnrE="/>
+        <field:display field="factor1Description" id="s_com_hpe_ao_domain_transaction_Capacity_factor1Description" object="${capacity}" z="SwIi7ltQ0sQZu7xQRziRWehPeZA="/>
+        <field:display field="factor2" id="s_com_hpe_ao_domain_transaction_Capacity_factor2" object="${capacity}" z="56zVRVK5epTs4blQsqJKKy5Czxc="/>
+        <field:display field="factor2Description" id="s_com_hpe_ao_domain_transaction_Capacity_factor2Description" object="${capacity}" z="P8EBytAOoc31UexS8KbWkK5+y6o="/>
+        <field:display field="factor3" id="s_com_hpe_ao_domain_transaction_Capacity_factor3" object="${capacity}" z="2njbEWvidbbo1oaNJgJCtQbV0xs="/>
+        <field:display field="factor3Description" id="s_com_hpe_ao_domain_transaction_Capacity_factor3Description" object="${capacity}" z="eguJGiuumgMXuk6a4nfWDyGSZp4="/>
+        <field:display field="teamAveragePointDailyActual" id="s_com_hpe_ao_domain_transaction_Capacity_teamAveragePointDailyActual" object="${capacity}" z="jwU7pgGapKE/jeHo1ll5T61k0TU="/>
+    </page:show>
+</div>

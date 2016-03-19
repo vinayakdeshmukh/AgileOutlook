@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hpe_ao_domain_transaction_Program" modelAttribute="program" path="/programs" versionField="Version" z="gAYyfgzeDhPvYLXGP9tVr63yhIg=">
+        <field:input field="name" id="c_com_hpe_ao_domain_transaction_Program_name" max="30" min="3" required="true" z="91DTXvg4RMLS81grW14MoYb0DyQ="/>
+        <field:textarea field="description" id="c_com_hpe_ao_domain_transaction_Program_description" z="qVRjhuCr0xJna85h4OGUccLk1gg="/>
+        <field:select field="tag" id="c_com_hpe_ao_domain_transaction_Program_tag" itemValue="id" items="${tags}" multiple="true" path="/tags" z="jfZ0XFuAJBg92wLrQyf9PpKGQFc="/>
+        <field:select field="status" id="c_com_hpe_ao_domain_transaction_Program_status" items="${statuses}" path="statuses" z="4Yj/pqBBSEdVgzkYDgZBvK4FJ2E="/>
+        <field:datetime dateTimePattern="${program_startdatebaseline_date_format}" field="startDateBaseline" id="c_com_hpe_ao_domain_transaction_Program_startDateBaseline" z="dhExzONz28BuV+ndC2Wd2MfFTwI="/>
+        <field:datetime dateTimePattern="${program_enddatebaseline_date_format}" field="endDateBaseline" id="c_com_hpe_ao_domain_transaction_Program_endDateBaseline" z="ATjrVvXpsBIUzdXj7Axz2Xcffdc="/>
+        <field:datetime dateTimePattern="${program_startdateactual_date_format}" field="startDateActual" id="c_com_hpe_ao_domain_transaction_Program_startDateActual" z="9TqbjWWfT80LikYkqDgmUtgcYrs="/>
+        <field:datetime dateTimePattern="${program_enddateactual_date_format}" field="endDateActual" id="c_com_hpe_ao_domain_transaction_Program_endDateActual" z="xWuvoozsIS9Nni7ysalRR5zIKzE="/>
+        <field:input field="orgName" id="c_com_hpe_ao_domain_transaction_Program_orgName" max="30" required="true" z="MqMoNTXKw1AkvNfedb0Pp5dObmQ="/>
+    </form:update>
+</div>

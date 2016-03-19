@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:spring="http://www.springframework.org/tags"
+  xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  <page:show id="ps_com_hpe_ao_domain_transaction_Project" object="${project}" path="/projects" z="user-managed">
+    <div>
+      <div class="floatPanel width100">
+        <util:panel id="Project" title="Project">
+          <div class="floatPanel width50">
+            <field:display field="name" id="s_com_hpe_ao_domain_transaction_Project_name" object="${project}"
+              z="user-managed" />
+            <field:display field="status" id="s_com_hpe_ao_domain_transaction_Project_status" object="${project}"
+              z="user-managed" />
+          </div>
+          <div class="floatPanel width50">
+            <field:display field="program" id="s_com_hpe_ao_domain_transaction_Project_program" object="${project}"
+              z="user-managed" />
+            <field:display field="leadName" id="s_com_hpe_ao_domain_transaction_Project_leadName" object="${project}"
+              z="user-managed" />
+          </div>
+        </util:panel>
+      </div>
+      <div class="floatPanel width100">
+        <util:panel id="Dates" title="Baseline/Actual Dates">
+          <div class="floatPanel width50">
+            <field:display date="true" dateTimePattern="${project_startdatebaseline_date_format}"
+              field="startDateBaseline" id="s_com_hpe_ao_domain_transaction_Project_startDateBaseline"
+              object="${project}" z="user-managed" />
+            <field:display date="true" dateTimePattern="${project_enddatebaseline_date_format}" field="endDateBaseline"
+              id="s_com_hpe_ao_domain_transaction_Project_endDateBaseline" object="${project}" z="user-managed" />
+          </div>
+          <div class="floatPanel width50">
+            <field:display date="true" dateTimePattern="${project_startdateactual_date_format}" field="startDateActual"
+              id="s_com_hpe_ao_domain_transaction_Project_startDateActual" object="${project}" z="user-managed" />
+            <field:display date="true" dateTimePattern="${project_enddateactual_date_format}" field="endDateActual"
+              id="s_com_hpe_ao_domain_transaction_Project_endDateActual" object="${project}" z="user-managed" />
+          </div>
+          <!--  
+          <div class="floatPanel width30">
+            <c:out value="${startDateDiff}" />
+            <c:out value="${endDateDiff}" />
+          </div>
+          -->
+        </util:panel>
+      </div>
+      <div class="floatPanel width100">
+        <util:panel id="Defaults" title="Defaults">
+          <div class="floatPanel width50">
+            <field:display field="teamAveragePointDaily"
+              id="s_com_hpe_ao_domain_transaction_Project_teamAveragePointDaily" object="${project}" z="user-managed" />
+            <field:display field="averagePointsPerStory"
+              id="s_com_hpe_ao_domain_transaction_Project_averagePointsPerStory" object="${project}" z="user-managed" />
+          </div>
+          <div class="floatPanel width50">
+            <field:display field="averageTeamCount" id="s_com_hpe_ao_domain_transaction_Project_averageTeamCount"
+              object="${project}" z="user-managed" />
+            <field:display field="averageTeamSize" id="s_com_hpe_ao_domain_transaction_Project_averageTeamSize"
+              object="${project}" z="user-managed" />
+          </div>
+        </util:panel>
+      </div>
+    </div>
+    <field:display field="description" id="s_com_hpe_ao_domain_transaction_Project_description" object="${project}"
+      z="user-managed" />
+    <field:display field="tag" id="s_com_hpe_ao_domain_transaction_Project_tag" object="${project}" z="user-managed" />
+  </page:show>
+  <util:panel id="pageActions" title="Page Actions">
+    <table class="pageLayout noBorder">
+      <tr>
+        <td class="noBorder"></td>
+        <td class="noBorder"><spring:url value="/applications" var="application_list" /> <input
+          id="btnApplicationList" onclick="window.location.href='${application_list}'" type="button"
+          value="Application List" /></td>
+        <td class="noBorder"><spring:url value="/features" var="feature_list" /> <input id="btnFeatureList"
+          onclick="window.location.href='${feature_list}'" type="button" value="Feature List" /></td>
+        <td class="noBorder"><spring:url value="/projectreleases" var="release_list" /> <input id="btnReleaseList"
+          onclick="window.location.href='${release_list}'" type="button" value="Release List" /></td>
+        <td class="noBorder"><spring:url value="/capacitys" var="capacity_list" /> <input id="btnCapacityList"
+          onclick="window.location.href='${capacity_list}'" type="button" value="Capacity List" /></td>
+
+        <td class="colSep noBorder  width50" />
+
+        <!--  
+        <td><spring:url value="/capacityentrys?form" var="capacity_entry" /> <input id="btnCapacityEntry"
+          onclick="window.location.href='${capacity_entry}'" type="button" value="Capacity Entry" /></td>
+        <td><spring:url value="/progressentrys?form" var="progress_entry" /> <input id="btnProgressEntry"
+          onclick="window.location.href='${progress_entry}'" type="button" value="Progress Entry" /></td>
+        <td><spring:url value="/bulkupload/index" var="bulkUpload" /> <input id="btnReleaseView"
+          onclick="window.location.href='${bulkUpload}'" type="button" value="Features Bulk Upload" /></td>
+        -->
+        <td class="noBorder"><spring:url value="/projects/${itemId}?adjustBaseline" var="adjustBaseline" /> <input
+          id="btnReleaseView" onclick="window.location.href='${adjustBaseline}'" type="button"
+          value="Refresh Baseline/Actuals" /></td>
+
+      </tr>
+    </table>
+  </util:panel>
+</div>

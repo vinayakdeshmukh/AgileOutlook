@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_hpe_ao_domain_transaction_PrgPrjSelectMenu" modelAttribute="prgPrjSelectMenu" path="/prgprjselectmenus" render="${empty dependencies}" z="QK8zCfXHZDfRoPZT8BF++8jD1YA=">
+        <field:input field="createUser" id="c_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_createUser" max="30" z="2e8EzJP1Mr69qhcUZUZJC9D8+jo="/>
+        <field:select field="program" id="c_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_program" itemValue="id" items="${programs}" path="/programs" required="true" z="SGzS+DbMkz977KGhuWhpknvbq0M="/>
+        <field:select field="project" id="c_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_project" itemValue="id" items="${projects}" path="/projects" required="true" z="hDeqQFUm5pk1uu0OCa8sVFAS4Ic="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_hpe_ao_domain_transaction_PrgPrjSelectMenu" render="${not empty dependencies}" z="vXHwaXMmLkP+eRP49gJvXC+orSo="/>
+</div>

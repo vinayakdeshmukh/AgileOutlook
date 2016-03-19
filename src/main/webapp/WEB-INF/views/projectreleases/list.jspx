@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:spring="http://www.springframework.org/tags"
+  xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <util:panel id="pageActions" title="pageActions">
+        <table class="pageLayout noBorder">
+            <tr>
+                <td class="noBorder">
+                    <spring:url value="/projects/${sessionScope.sessionCache.projectId}" var="project_show" /> 
+                    <input id="btnFeatureList" onclick="window.location.href='${project_show}'" type="button" value="Back to Project" />
+                </td>
+                <td class="noBorder autoWidthLabel">
+                  <c:if test="${! empty sessionScope.sessionCache.project}">
+                    <label>Project :</label><c:out value="${sessionScope.sessionCache.project.name}"></c:out>
+                  </c:if>
+                </td>
+            </tr>
+        </table>
+    </util:panel>
+    
+    <page:list id="pl_com_hpe_ao_domain_transaction_ProjectRelease" items="${projectreleases}" z="ijv84+dIOa8RuORXlyVp7W0F9/A=">
+        <table:table data="${projectreleases}" id="l_com_hpe_ao_domain_transaction_ProjectRelease" path="/projectreleases" z="W1/NjqLJiF9Y2mcfApPqp4mxU9U=">
+            <table:column id="c_com_hpe_ao_domain_transaction_ProjectRelease_name" property="name" z="zrUI27iYevbCqM/KR9Xe7epBfWQ="/>
+            <!--  
+            <table:column id="c_com_hpe_ao_domain_transaction_ProjectRelease_description" property="description" z="e7JtpRAxdzpLKbQr+W6Rcpx6EdU="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProjectRelease_tag" property="tag" z="vK+A0IBD9Oq1mjwiXtMCqSCkWf4="/>
+            -->
+            <table:column id="c_com_hpe_ao_domain_transaction_ProjectRelease_status" property="status" z="BToVIEk94PlSM2pR58j9I3tBQm0="/>
+            <table:column date="true" dateTimePattern="${projectRelease_startdatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_ProjectRelease_startDateBaseline" property="startDateBaseline" z="xJN5Ho8f+6nzHAt3XS9AejcxiFQ="/>
+            <table:column date="true" dateTimePattern="${projectRelease_enddatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_ProjectRelease_endDateBaseline" property="endDateBaseline" z="sqsn6225iwTZdMZOEKqtgnMiXkg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProjectRelease_description" property="description" z="e7JtpRAxdzpLKbQr+W6Rcpx6EdU="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProjectRelease_tag" property="tag" z="vK+A0IBD9Oq1mjwiXtMCqSCkWf4="/>
+        </table:table>
+    </page:list>
+</div>

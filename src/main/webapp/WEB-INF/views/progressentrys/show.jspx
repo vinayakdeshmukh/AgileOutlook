@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_ProgressEntry" object="${progressentry}" path="/progressentrys" z="5yJx4rTFh1dJ24Bj6BOBmXsnMlQ=">
+        <field:display date="true" dateTimePattern="${progressEntry_effectivedate_date_format}" field="effectiveDate" id="s_com_hpe_ao_domain_transaction_ProgressEntry_effectiveDate" object="${progressentry}" z="CoczdcpgSZ0xqqZD7s5AtT4h8SI="/>
+        <field:display field="entryComments" id="s_com_hpe_ao_domain_transaction_ProgressEntry_entryComments" object="${progressentry}" z="5ITGzbsGE3gGnYe5u0gd9MtUAZc="/>
+        <field:display field="project" id="s_com_hpe_ao_domain_transaction_ProgressEntry_project" object="${progressentry}" z="N8HlUNO7rQ4ZXEWRajlzG35lzCA="/>
+        <field:display field="feature" id="s_com_hpe_ao_domain_transaction_ProgressEntry_feature" object="${progressentry}" z="4lS7UTr1GMXri0LnveAWMJA9MVw="/>
+        <field:display field="storyCountComplete" id="s_com_hpe_ao_domain_transaction_ProgressEntry_storyCountComplete" object="${progressentry}" z="1YSBhq1UFE4vJb8ktvjLB3pvVNI="/>
+        <field:display field="storyPointComplete" id="s_com_hpe_ao_domain_transaction_ProgressEntry_storyPointComplete" object="${progressentry}" z="YuSveVfPxUU2VcOBgGhThz+NuPA="/>
+    </page:show>
+</div>

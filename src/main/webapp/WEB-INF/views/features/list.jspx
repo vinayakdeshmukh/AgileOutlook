@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:spring="http://www.springframework.org/tags" 
+  xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+  xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <util:panel id="pageActions" title="pageActions">
+        <table class="pageLayout noBorder">
+            <tr>
+                <td class="noBorder">
+                    <spring:url value="/projects/${sessionScope.sessionCache.projectId}" var="project_show" /> 
+                    <input id="btnFeatureList" onclick="window.location.href='${project_show}'" type="button" value="Back to Project" />
+                </td>
+                <td class="noBorder autoWidthLabel">
+                  <c:if test="${! empty sessionScope.sessionCache.project}">
+                    <label>Project :</label><c:out value="${sessionScope.sessionCache.project.name}"></c:out>
+                  </c:if>
+                </td>
+                <td class="noBorder">
+                    <spring:url value="/bulkupload/index" var="bulkUpload"/>
+                    <input id="btnReleaseView" onclick="window.location.href='${bulkUpload}'" type="button" value="Features Bulk Upload"/>
+                </td>
+            </tr>
+        </table>
+    </util:panel>
+    
+    <page:list id="pl_com_hpe_ao_domain_transaction_Feature" items="${features}" z="Rd4ZFFJD+qAlZQGwhPJWK8HxHgQ=">
+        <table:table data="${features}" id="l_com_hpe_ao_domain_transaction_Feature" path="/features" z="6u7rd8jF0jjVZ/wb+nkSf7fQB54=">
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_name" property="name" z="cpZlfXNmlijdT5ZWLgMkquEdFjE="/>
+            <!--  
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_description" property="description" z="gH9o3AGMz5MEGxwpl4J/CeJ1PjA="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_tag" property="tag" z="KdkiEcI6dPPVcH7T5BEpmGYNMJw="/>
+            -->
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_status" property="status" z="a9IlkeDqkiSS4Sq/83oG/jld2bg="/>
+            <!--
+            <table:column date="true" dateTimePattern="${feature_startdatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Feature_startDateBaseline" property="startDateBaseline" z="jdGu0y710LcRU1NRXwR1Key/24o="/>
+            <table:column date="true" dateTimePattern="${feature_enddatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Feature_endDateBaseline" property="endDateBaseline" z="0s+my3FZ2OcYGRkdmAMsu1Cpi0I="/>
+            -->
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_storyCountBaseline" property="storyCountBaseline" z="a9IlkeDqkiSS4Sq/83oG/jld2bg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_storyPointBaseline" property="storyPointBaseline" z="a9IlkeDqkiSS4Sq/83oG/jld2bg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_storyCountActual" property="storyCountActual" z="a9IlkeDqkiSS4Sq/83oG/jld2bg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_storyPointActual" property="storyPointActual" z="a9IlkeDqkiSS4Sq/83oG/jld2bg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_description" property="description" z="gH9o3AGMz5MEGxwpl4J/CeJ1PjA="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Feature_tag" property="tag" z="KdkiEcI6dPPVcH7T5BEpmGYNMJw="/>
+            <table:column date="true" dateTimePattern="${feature_startdatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Feature_startDateBaseline" property="startDateBaseline" z="jdGu0y710LcRU1NRXwR1Key/24o="/>
+            <table:column date="true" dateTimePattern="${feature_enddatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Feature_endDateBaseline" property="endDateBaseline" z="0s+my3FZ2OcYGRkdmAMsu1Cpi0I="/>
+        </table:table>
+    </page:list>
+    
+</div>

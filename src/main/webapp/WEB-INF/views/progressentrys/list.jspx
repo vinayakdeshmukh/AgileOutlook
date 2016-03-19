@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_transaction_ProgressEntry" items="${progressentrys}" z="j0iakOVy7cxxlxKkZfu4dK1eyGI=">
+        <table:table data="${progressentrys}" id="l_com_hpe_ao_domain_transaction_ProgressEntry" path="/progressentrys" z="51Ln5Gny51LZdgi5cGTx23XzZL4=">
+            <table:column date="true" dateTimePattern="${progressEntry_effectivedate_date_format}" id="c_com_hpe_ao_domain_transaction_ProgressEntry_effectiveDate" property="effectiveDate" z="v3Fe5oYoIu8A3JP/T3iO677c4A0="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProgressEntry_entryComments" property="entryComments" z="rzvMnGLagm77IT7yJPTg0DpVUd8="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProgressEntry_project" property="project" z="0FGL0B/LBXkNWXmXq5P6U3A4hKk="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProgressEntry_feature" property="feature" z="3zGLBm3SIAXRiXFn9Wpzt5QkIwg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProgressEntry_storyCountComplete" property="storyCountComplete" z="DmLlDBF6lRVP53GQF6HB+kg+Cwo="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_ProgressEntry_storyPointComplete" property="storyPointComplete" z="1TouP0dnrAmrt+yBz/C0KO6yqPs="/>
+        </table:table>
+    </page:list>
+</div>

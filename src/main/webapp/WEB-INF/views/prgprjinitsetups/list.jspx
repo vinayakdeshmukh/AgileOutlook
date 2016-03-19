@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_transaction_PrgPrjInitSetup" items="${prgprjinitsetups}" z="oSI3ukdVaPs4gc0YmrSOaCo9Xgo=">
+        <table:table data="${prgprjinitsetups}" id="l_com_hpe_ao_domain_transaction_PrgPrjInitSetup" path="/prgprjinitsetups" z="EcZSvmRkCg3RzBk95qu13yu+dhc=">
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_program1" property="program1" z="cwaXFJn8We0I3wDlKWklFVHACOg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_orgName" property="orgName" z="WX7PvKQG+ho6ryXEQPR0avGu5Nc="/>
+            <table:column date="true" dateTimePattern="${prgPrjInitSetup_startdatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_startDateBaseline" property="startDateBaseline" z="fmjzqLNMi2rWkN1i9W+iYvTZIHc="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11" property="project11" z="p/baJm3unPhZksbUWl5G6noraz4="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11TeamCount" property="project11TeamCount" z="2OsbMCKvMEzE27PqMu5cBmyUS8A="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_PrgPrjInitSetup_project11TeamSize" property="project11TeamSize" z="YI/m/6HMkgwTyXp5dvNI/YOdW7E="/>
+        </table:table>
+    </page:list>
+</div>

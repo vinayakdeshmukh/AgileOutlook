@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="progressentrys/list">
+        <put-attribute name="body" value="/WEB-INF/views/progressentrys/list.jspx"/>
+    </definition>
+<definition extends="default" name="progressentrys/show">
+        <put-attribute name="body" value="/WEB-INF/views/progressentrys/show.jspx"/>
+    </definition>
+<definition extends="default" name="progressentrys/create">
+        <put-attribute name="body" value="/WEB-INF/views/progressentrys/create.jspx"/>
+    </definition>
+<definition extends="default" name="progressentrys/update">
+        <put-attribute name="body" value="/WEB-INF/views/progressentrys/update.jspx"/>
+    </definition>
+</tiles-definitions>

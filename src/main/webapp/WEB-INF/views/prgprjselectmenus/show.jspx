@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_PrgPrjSelectMenu" object="${prgprjselectmenu}" path="/prgprjselectmenus" z="9oo8Fmj/jf0adBUhUv7gkCX0ckY=">
+        <field:display field="createUser" id="s_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_createUser" object="${prgprjselectmenu}" z="Cu/Oh8HMCD3mWmfbPly2t8LS9lU="/>
+        <field:display field="program" id="s_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_program" object="${prgprjselectmenu}" z="Dol5TJolY/lN1lxZ58L76XD7gOE="/>
+        <field:display field="project" id="s_com_hpe_ao_domain_transaction_PrgPrjSelectMenu_project" object="${prgprjselectmenu}" z="j+7UCmmdKzV7O1J1rMbKhzoYVBE="/>
+    </page:show>
+</div>

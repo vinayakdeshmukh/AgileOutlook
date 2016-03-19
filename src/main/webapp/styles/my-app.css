@@ -1,0 +1,141 @@
+body, div, td {
+	font-family: verdana, geneva, arial, helvetica, sans-serif !important;
+	font-size: 14px !important;
+	overflow: auto;
+}
+
+#wrapper {
+	width: 1000px !important;
+	max-width: 100% !important;
+}
+
+#menu {
+	display: none;
+}
+
+#menu h2 {
+	color: black;
+	background: #dddddd;
+}
+
+#footer {
+	margin-top: 5px;
+}
+
+label {
+	width: 170px !important;
+	font-weight: bold;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+table th {
+	text-align: center !important;
+	padding: 5px !important;
+}
+
+tfoot td {
+	height: 30px !important;
+	vertical-align: middle !important;
+	font-weight: bold !important;
+	border-top: 2px solid black !important;
+}
+
+.submit input, input[type=button] {
+	border: 1px solid #0055aa !important;
+	color: #ffffff !important;
+	padding: 5px 15px !important;
+	margin: 2px;
+	height: 30px;
+	background-color: #4584f3 !important;
+	border-radius: 5px;
+}
+
+.btnSelectProject {
+	margin: 20px !important;
+	width: 180px !important;
+	height: 130px !important;
+	border-radius: 15px !important;
+	background-color: #CCCCCC !important;
+	font-weight: bold !important;
+}
+
+div .box {
+	border: 0px solid #cccccc;
+}
+
+a {
+	color: white !important;
+}
+
+img {
+	margin: 2px !important;
+}
+/* --------------------------------------------------- */
+#header table td, #footer table td {
+	border: 0px;
+	color: white;
+	vertical-align: middle;
+	background-color: #4584f3;
+	height: 50px;
+}
+
+.colsep {
+	width: 60px;
+}
+
+.pageLayout {
+	width: 100% !important;
+}
+
+.pageLayout td {
+	border: 1px solid #cccccc;
+	vertical-align: top;
+	background-color: white;
+}
+
+.noBorder {
+	border: 0px solid #cccccc !important;
+}
+
+.noLabel label {
+	visibility: hidden;
+	display: none;
+}
+
+.autoWidthLabel label {
+	width: auto !important;
+	margin-right: 3px;
+}
+
+.noLabel .box {
+	margin-left: 0px !important;
+	white-space: nowrap;
+}
+
+.floatPanel {
+	float: left;
+	width: auto;
+	display: block;
+	margin: 2px;
+}
+
+.width100 {
+	width: 99% !important;
+}
+
+.width50 {
+	width: 49.25% !important;
+}
+
+.width30 {
+	width: 32% !important;
+}
+
+.width25 {
+	width: 25.00% !important;
+}
+
+.width12 {
+	width: 12.00% !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_transaction_CapacityEntry" items="${capacityentrys}" z="4L3ZpAjjRrJCbyO9TqxwH5PTf9k=">
+        <table:table data="${capacityentrys}" id="l_com_hpe_ao_domain_transaction_CapacityEntry" path="/capacityentrys" z="qMRZcXsO/z+TjnABU5qlwEX/NBk=">
+            <table:column id="c_com_hpe_ao_domain_transaction_CapacityEntry_project" property="project" z="hVXuB4jQHhkPfJrd2fXy4U7AqG8="/>
+            <table:column date="true" dateTimePattern="${capacityEntry_startdate_date_format}" id="c_com_hpe_ao_domain_transaction_CapacityEntry_startDate" property="startDate" z="5HKLubFRdkdcSEguf9DSpL7a5kg="/>
+            <table:column date="true" dateTimePattern="${capacityEntry_enddate_date_format}" id="c_com_hpe_ao_domain_transaction_CapacityEntry_endDate" property="endDate" z="g5sc2laVjKFrMP2+TsZ5A4OK7tU="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_CapacityEntry_capacityEntryType" property="capacityEntryType" z="JEzsG6bHWur+xIHA7MyBvpgsB1E="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamCount" property="teamCount" z="uO7DVm9QOVrFhGRyaRBGvtOhANo="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamSize" property="teamSize" z="WztP1RsbBwpTOTGje8/rO8ZioUU="/>
+        </table:table>
+    </page:list>
+</div>

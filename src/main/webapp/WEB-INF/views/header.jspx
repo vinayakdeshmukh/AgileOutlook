@@ -1,0 +1,41 @@
+<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+  xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+
+  <spring:url var="banner" value="/resources/images/banner-graphic.png" />
+  <spring:url var="home" value="/" />
+  <spring:message code="button_home" var="home_label" htmlEscape="false" />
+  <!--  
+  <a href="${home}" name="${fn:escapeXml(home_label)}" title="${fn:escapeXml(home_label)}">
+    <img src="${banner}" />
+  </a>
+  -->
+  <spring:url var="homeIcon" value="/resources/images/home-circle-blue-48.png" />
+  <table>
+    <tr>
+      <td style="width: 70px; text-align: center;"><a href="${home}" name="${fn:escapeXml(home_label)}"
+        title="${fn:escapeXml(home_label)}"> <img src="${homeIcon}" /> <!--  <font face="webdings" size="24" color="white">H</font> -->
+      </a></td>
+      <td style="font-family: Harrington !important; font-size: 24px !important; padding: 5px; color: white;">
+        Agile Outlook</td>
+      <td><c:if test="${! empty sessionScope.sessionCache.program}">
+          <label>Program :</label>
+          <span><c:out value="${sessionScope.sessionCache.program.name}"></c:out></span>
+        </c:if> <br />
+      <c:if test="${! empty sessionScope.sessionCache.project}">
+          <spring:url value="/projects/${sessionScope.sessionCache.projectId}" var="project" />
+          <label>Project :</label>
+          <span><a href="${project}"> <c:out value="${sessionScope.sessionCache.project.name}"></c:out></a></span>
+        </c:if></td>
+      <td style="text-align: right; padding-right: 10px"><c:if
+          test="${! empty pageContext.request.userPrincipal.name}">
+            Welcome: <c:out value="${pageContext.request.userPrincipal.name}" />
+          <br />
+          <spring:url value="/resources/j_spring_security_logout" var="logout" />
+          <a href="${logout}"> <spring:message code="security_logout" />
+          </a>
+        </c:if></td>
+    </tr>
+  </table>
+</div>

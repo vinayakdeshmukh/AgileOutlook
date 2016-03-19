@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+
+  <script>
+			function calculateCapacityOrAPD(apd) {
+				var teamCount = document.getElementById("_teamCount_id").value; //alert(teamCount);
+				var teamSize = document.getElementById("_teamSize_id").value; //alert(teamSize);
+				var teamAvailability = document
+						.getElementById("_teamAvailability_id").value; //alert(teamAvailability);
+				var teamAveragePointDaily = document
+						.getElementById("_teamAveragePointDaily_id").value; //alert(teamAveragePointDaily);
+
+				var factor1 = document.getElementById("_factor1_id").value; //alert(factor1);
+				var factor2 = document.getElementById("_factor2_id").value; //alert(factor2);
+				var factor3 = document.getElementById("_factor3_id").value; //alert(factor3);
+				
+				var startDate = new Date( document.getElementById("_startDate_id").value ); 	//alert(startDate);
+				var endDate = new Date( document.getElementById("_endDate_id").value ); //alert(endDate);
+				var days = Math.floor( (endDate - startDate) / (1000*60*60*24) ) ;
+				//alert ( days );
+				var pointCapacity = document.getElementById("_pointCapacity_id").value;
+				
+				
+				//Factor 
+				var factor = 0;
+				if(factor1){
+					factor += factor1*1; //alert(factor);
+				}
+				if(factor2){
+					factor += factor2*1; //alert(factor);
+				}
+				if(factor3){
+					factor += factor3*1; //alert(factor);
+				}
+				//factor = factor /100;
+				//alert("factor = " + factor);
+				
+				//Team
+				var teamDays = (teamCount * teamSize * days) * (teamAvailability / 100);		
+				//alert("teamDays = " + teamDays);
+				
+				if(apd){
+					//alert ( pointCapacity );
+    				teamAveragePointDaily = (pointCapacity * factor ) -pointCapacity ;								//alert(teamAveragePointDaily);
+    				teamAveragePointDaily = Math.round ( (teamAveragePointDaily / teamDays) / 100) ; 					
+    				//alert(teamAveragePointDaily);
+    				document.getElementById("_teamAveragePointDaily_id").value = teamAveragePointDaily;
+				}else{
+    				pointCapacity = teamAveragePointDaily * teamDays ;
+    				pointCapacity = pointCapacity + (pointCapacity * factor);
+    				//alert(pointCapacity);
+    				document.getElementById("_pointCapacity_id").value = pointCapacity;
+				}
+			}
+			
+			function calculateTeamAPD() {
+				//alert("calculateTeamAPD");
+				calculateCapacityOrAPD(true);
+			}
+			
+			function calculatePointCapacity() {
+				//alert("calculatePointCapacity");
+				calculateCapacityOrAPD(false);
+				
+			}
+		</script>
+
+  <form:create id="fc_com_hpe_ao_domain_transaction_CapacityEntry" modelAttribute="capacityEntry" path="/capacityentrys" render="${empty dependencies}" z="user-managed">
+        <div>
+            <div class="floatPanel width50">
+                <util:panel id="Project" title="Project and Date Range">
+                    <field:select field="project" id="c_com_hpe_ao_domain_transaction_CapacityEntry_project" itemValue="id" items="${projects}" path="/projects" required="true" z="user-managed"/>
+                    <field:select field="capacityEntryType" id="c_com_hpe_ao_domain_transaction_CapacityEntry_capacityEntryType" items="${capacityentrytypes}" path="capacityentrytypes" required="true" z="user-managed"/>
+                    <field:datetime dateTimePattern="${capacityEntry_startdate_date_format}" field="startDate" id="c_com_hpe_ao_domain_transaction_CapacityEntry_startDate" required="true" z="user-managed"/>
+                    <field:datetime dateTimePattern="${capacityEntry_enddate_date_format}" field="endDate" id="c_com_hpe_ao_domain_transaction_CapacityEntry_endDate" z="user-managed"/>
+                </util:panel>
+            </div>
+            <div class="floatPanel width50">
+                <util:panel id="Team" title="Team Capacity">
+                    <field:input field="teamCount" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamCount" required="true" validationMessageCode="field_invalid_number" z="user-managed"/>
+                    <field:input field="teamSize" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamSize" required="true" validationMessageCode="field_invalid_number" z="user-managed"/>
+                    <field:input field="teamAvailability" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamAvailability" required="true" validationMessageCode="field_invalid_number" z="user-managed"/>
+                    <table class="pageLayout noBorder"><tr><td class="noBorder">
+                    <field:input field="teamAveragePointDaily" id="c_com_hpe_ao_domain_transaction_CapacityEntry_teamAveragePointDaily" required="true" validationMessageCode="field_invalid_number" z="user-managed"/>
+                    </td><td class="noBorder"><a href="javaScript:calculateTeamAPD();" style="color: blue !important;">Calculate</a></td></tr></table>
+                </util:panel>
+            </div>
+            <div class="floatPanel width100">
+                <util:panel id="Factor" title="Acceleration (+) or Deceleration (-)  factors">
+                    <div class="floatPanel">
+                        <field:input field="factor1" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor1" validationMessageCode="field_invalid_number" z="user-managed"/>
+                        <field:input field="factor2" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor2" validationMessageCode="field_invalid_number" z="user-managed"/>
+                        <field:input field="factor3" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor3" validationMessageCode="field_invalid_number" z="user-managed"/>
+                    </div>
+                    <div class="floatPanel">
+                        <field:input field="factor1Description" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor1Description" z="user-managed"/>
+                        <field:input field="factor2Description" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor2Description" z="user-managed"/>
+                        <field:input field="factor3Description" id="c_com_hpe_ao_domain_transaction_CapacityEntry_factor3Description" z="user-managed"/>
+                    </div>
+                </util:panel>
+            </div>
+            <div class="floatPanel">
+                <table class="pageLayout noBorder"><tr><td class="noBorder">
+                <field:input field="pointCapacity" id="c_com_hpe_ao_domain_transaction_CapacityEntry_pointCapacity" readonly="false" validationMessageCode="field_invalid_number" z="user-managed"/>
+                </td><td class="noBorder"><a href="javaScript:calculatePointCapacity();" style="color: blue !important;">Calculate</a></td></tr></table>
+                <field:textarea field="entryComments" id="c_com_hpe_ao_domain_transaction_CapacityEntry_entryComments" z="user-managed"/>
+            </div>
+        </div>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_hpe_ao_domain_transaction_CapacityEntry" render="${not empty dependencies}" z="user-managed"/>
+</div>

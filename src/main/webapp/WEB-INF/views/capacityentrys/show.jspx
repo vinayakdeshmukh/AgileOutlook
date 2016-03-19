@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hpe_ao_domain_transaction_CapacityEntry" object="${capacityentry}" path="/capacityentrys" z="xv9TPKMzEQvnT60NH+MXAeVis6k=">
+        <field:display field="project" id="s_com_hpe_ao_domain_transaction_CapacityEntry_project" object="${capacityentry}" z="xWPCKLKr4hv8MPm1AE8FKcpaL8A="/>
+        <field:display date="true" dateTimePattern="${capacityEntry_startdate_date_format}" field="startDate" id="s_com_hpe_ao_domain_transaction_CapacityEntry_startDate" object="${capacityentry}" z="TcBVQK7lumhGLH7s4DNjNKYyyUw="/>
+        <field:display date="true" dateTimePattern="${capacityEntry_enddate_date_format}" field="endDate" id="s_com_hpe_ao_domain_transaction_CapacityEntry_endDate" object="${capacityentry}" z="SFhFZoJ9qyDgPnPXPiZj3YJRFz4="/>
+        <field:display field="capacityEntryType" id="s_com_hpe_ao_domain_transaction_CapacityEntry_capacityEntryType" object="${capacityentry}" z="HVx3sw8N37QyZIgnEuV3gOrg/Hc="/>
+        <field:display field="teamCount" id="s_com_hpe_ao_domain_transaction_CapacityEntry_teamCount" object="${capacityentry}" z="9Fm0qxkG2DkG280VxceVD0GoZLg="/>
+        <field:display field="teamSize" id="s_com_hpe_ao_domain_transaction_CapacityEntry_teamSize" object="${capacityentry}" z="lvQnGajBewqdwBcx/6qb/dX+DYE="/>
+        <field:display field="teamAvailability" id="s_com_hpe_ao_domain_transaction_CapacityEntry_teamAvailability" object="${capacityentry}" z="h6r/sVe+yp6nGm+IYxVrSu0wj7U="/>
+        <field:display field="teamAveragePointDaily" id="s_com_hpe_ao_domain_transaction_CapacityEntry_teamAveragePointDaily" object="${capacityentry}" z="HT1KO+A600Iu1EuEsVM/sAb0Jjk="/>
+        <field:display field="pointCapacity" id="s_com_hpe_ao_domain_transaction_CapacityEntry_pointCapacity" object="${capacityentry}" z="3uEO4CP4XpoaieZuFWb6dlOSCHQ="/>
+        <field:display field="factor1" id="s_com_hpe_ao_domain_transaction_CapacityEntry_factor1" object="${capacityentry}" z="7C8KKTSnvLET2hMOKAcq3a8ewCk="/>
+        <field:display field="factor1Description" id="s_com_hpe_ao_domain_transaction_CapacityEntry_factor1Description" object="${capacityentry}" z="E8wePQscCtrmhVFRzoeNpAd+kFo="/>
+        <field:display field="factor2" id="s_com_hpe_ao_domain_transaction_CapacityEntry_factor2" object="${capacityentry}" z="LjnPpaDvbyjXXaX3kI0jni0pw10="/>
+        <field:display field="factor2Description" id="s_com_hpe_ao_domain_transaction_CapacityEntry_factor2Description" object="${capacityentry}" z="hAdii+QRzkWD2zx2LBMh+ops3oU="/>
+        <field:display field="factor3" id="s_com_hpe_ao_domain_transaction_CapacityEntry_factor3" object="${capacityentry}" z="nJTtXVD2/mNYQCicFaCTzYQWFVM="/>
+        <field:display field="factor3Description" id="s_com_hpe_ao_domain_transaction_CapacityEntry_factor3Description" object="${capacityentry}" z="PuIRi5PbZOU9RGPwVanrtjCGH70="/>
+        <field:display field="entryComments" id="s_com_hpe_ao_domain_transaction_CapacityEntry_entryComments" object="${capacityentry}" z="5OQeHqxWEpkHgPPXKXKXCqhS/KU="/>
+    </page:show>
+</div>

@@ -1,0 +1,55 @@
+<div xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+  xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  <spring:message var="app_name" code="application_name" htmlEscape="false" />
+  <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+  <util:panel id="title" title="${title}">
+    <!--  
+    <h3>
+      <spring:message code="welcome_h3" arguments="${app_name}" />
+    </h3>
+    -->
+    <script>
+					dojo.require("dijit.Dialog");
+					//create the dialog:
+					var myDialog = new dijit.Dialog({
+						title : "My Dialog",
+					});
+
+					function zoom(img) {
+						newImg = dojo.clone(img);
+
+						var wid = newImg.width;
+						var ht = newImg.height;
+						var zm = (wid > 161) ? 0.5 : 5;
+						newImg.style.width = (wid * zm) + "px";
+						newImg.style.height = (ht * zm) + "px";
+						newImg.style.marginLeft = -(img.width / 2) + "px";
+						newImg.style.marginTop = -(img.height / 2) + "px";
+						
+						myDialog.set("content", newImg);
+						//myDialog.set("style", "width: " + img.width+ "px; height: " + img.height+ "px" );
+						myDialog.show();
+					}
+				</script>
+    <table style="border: 0px solid black;">
+      <tr>
+        <td align="center" style="border: 0px solid black; border-right: 1px solid #cccccc;"><spring:url
+            var="prgPrjSelectViewUrl" value="/prgprjselectmenus?form" /> <input type="button"
+          onclick="window.location.href='${prgPrjSelectViewUrl}'" class="btnSelectProject"
+          value="Select Program/Project" /> <br /> <spring:url var="prgPrjSetupViewUrl" value="prgprjinitsetups?form" />
+          <input type="button" onclick="window.location.href='${prgPrjSetupViewUrl}'"
+          style="margin: 10px; width: 200px;" value="Setup NEW Program/Project" /></td>
+
+        <td align="center" style="border: 0px solid black;"><h4>Quick Start:</h4> <br /> <br /> <spring:url
+            var="InfoGraph" value="/resources/images/AgileOutlookQuickStart.png" /> <img alt="InfoGraph"
+          src="${InfoGraph}" width="160px" height="77px" onClick="zoom(this);" /> <br />
+          <h4>Overview:</h4> <br /> <br /> <spring:url var="InfoGraph"
+            value="/resources/images/AgileOutlookStructure.png" /> <img alt="InfoGraph" src="${InfoGraph}"
+          width="160px" height="77px" onClick="zoom(this);" /></td>
+      </tr>
+    </table>
+  </util:panel>
+
+</div>

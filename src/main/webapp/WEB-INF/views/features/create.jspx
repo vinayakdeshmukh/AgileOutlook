@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_hpe_ao_domain_transaction_Feature" modelAttribute="feature" path="/features" render="${empty dependencies}" z="UdKfeeObEk75HeqFzFoey7KaWw8=">
+      <div>
+      <div class="floatPanel width100"><div class="floatPanel width50">
+        <field:input field="name" id="c_com_hpe_ao_domain_transaction_Feature_name" max="30" min="3" required="true" z="/QoyEJ/KPTZ+4hyGzILTkWOj/UQ="/>
+        <field:select field="application" id="c_com_hpe_ao_domain_transaction_Feature_application" itemValue="id" items="${applications}" path="/applications" required="true" z="N1hfg+gnZBqZaL7I/ZwXBzkl8BA="/>
+        <field:select field="projectRelease" id="c_com_hpe_ao_domain_transaction_Feature_projectRelease" itemValue="id" items="${projectreleases}" path="/projectreleases" required="true" z="chOqHrH1JFXz8am1QyEohSuh+bk="/>
+        <field:select field="status" id="c_com_hpe_ao_domain_transaction_Feature_status" items="${statuses}" path="statuses" z="Ir4GmKlRk4avwpWxVUl/VhS26v0="/>
+      </div>
+      <div class="floatPanel width50">
+        <field:input field="leadName" id="c_com_hpe_ao_domain_transaction_Feature_leadName" max="30" z="sAsrW3T/AoZI87eyLCjnvWwPfes="/>
+        <field:select field="tag" id="c_com_hpe_ao_domain_transaction_Feature_tag" itemValue="id" items="${tags}" multiple="true" path="/tags" z="X2SAwi+gOws+5norhPPjHaFncOM="/>
+        <field:textarea field="description" id="c_com_hpe_ao_domain_transaction_Feature_description" z="egKb7+K9Xx8a7EBf6abeuxoNq9E="/>
+      </div></div>
+      
+      <div class="floatPanel width100"><table class="pageLayout"><tr><th>Baseline</th><th>Actual</th></tr><tr><td>
+        <field:datetime dateTimePattern="${feature_startdatebaseline_date_format}" field="startDateBaseline" id="c_com_hpe_ao_domain_transaction_Feature_startDateBaseline" z="KbrYDPgCOxkppBzwK/zr7ODNbbM="/>
+        <field:datetime dateTimePattern="${feature_enddatebaseline_date_format}" field="endDateBaseline" id="c_com_hpe_ao_domain_transaction_Feature_endDateBaseline" z="huupA/LAIRQuLnT3fS6OAuNvWEo="/>
+        <field:input field="storyCountBaseline" id="c_com_hpe_ao_domain_transaction_Feature_storyCountBaseline" validationMessageCode="field_invalid_number" z="XvtvV4tbHn6wvNlZWNCItyTRvYE="/>
+        <field:input field="storyPointBaseline" id="c_com_hpe_ao_domain_transaction_Feature_storyPointBaseline" validationMessageCode="field_invalid_number" z="5z4Pt+FUcCqfXro+iLfsVygelQg="/>
+      </td>
+      <td>
+        <field:datetime dateTimePattern="${feature_startdateactual_date_format}" field="startDateActual" id="c_com_hpe_ao_domain_transaction_Feature_startDateActual" z="WMo8fOr2UaeuEIlZhveOi8QHD8k="/>
+        <field:datetime dateTimePattern="${feature_enddateactual_date_format}" field="endDateActual" id="c_com_hpe_ao_domain_transaction_Feature_endDateActual" z="syEHupcrXESd3mH3moytKlZgN8w="/>
+        <field:input field="storyCountActual" id="c_com_hpe_ao_domain_transaction_Feature_storyCountActual" validationMessageCode="field_invalid_number" z="a7LCJmyc/ZCq3fy/X/eB8Apg6Qk="/>
+        <field:input field="storyPointActual" id="c_com_hpe_ao_domain_transaction_Feature_storyPointActual" validationMessageCode="field_invalid_number" z="+oejNBYWfbJSLTH+RDH/GS4wWVc="/>
+      </td></tr></table></div>
+      </div>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_hpe_ao_domain_transaction_Feature" render="${not empty dependencies}" z="BtvbYZMvn1Ec9EFrKf6K0CWJ2RY="/>
+</div>

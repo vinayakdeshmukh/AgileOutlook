@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_transaction_Project" items="${projects}" z="dKNJQwgAlP12pyRGlVXiAPwlkac=">
+        <table:table data="${projects}" id="l_com_hpe_ao_domain_transaction_Project" path="/projects" z="icwk+rgPHcyd+AFfKNb8i+MqVlw=">
+            <table:column id="c_com_hpe_ao_domain_transaction_Project_name" property="name" z="IQisLk3mSqQLkBW7P9ekRXiYZsg="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Project_description" property="description" z="NY3caJY729RYqautxGnSSAB7yEo="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Project_tag" property="tag" z="9zU6Ia+6Qtbe0hADVUoc+DjkzXc="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Project_status" property="status" z="O1NPB4bdMpQU3xXGD0/3YN498e4="/>
+            <table:column date="true" dateTimePattern="${project_startdatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Project_startDateBaseline" property="startDateBaseline" z="77zgUTq1kMgoxUf08MGRKG3+t+I="/>
+            <table:column date="true" dateTimePattern="${project_enddatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Project_endDateBaseline" property="endDateBaseline" z="Y/sjzVr+8Pnu+UiPqUrSlcbPGOg="/>
+        </table:table>
+    </page:list>
+</div>

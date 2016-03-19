@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_framework_TransactionLog" items="${transactionlogs}" z="YxnBD/l9C9PRS/qrQxwbLZHekZs=">
+        <table:table data="${transactionlogs}" id="l_com_hpe_ao_domain_framework_TransactionLog" path="/transactionlogs" z="mp40oXfbI5++frdUc1ptV5kFzl8=">
+            <table:column id="c_com_hpe_ao_domain_framework_TransactionLog_entityName" property="entityName" z="7JpEjfPMPVSPP/POZo2M3V7Zb1M="/>
+            <table:column id="c_com_hpe_ao_domain_framework_TransactionLog_entiyKey1" property="entiyKey1" z="xWnojYicHQtsjVUJx5MJVj1kfXk="/>
+            <table:column id="c_com_hpe_ao_domain_framework_TransactionLog_entityKey2" property="entityKey2" z="w+uN8UwltIUOB+ihIHAqdbXMv7A="/>
+            <table:column id="c_com_hpe_ao_domain_framework_TransactionLog_logType" property="logType" z="v7NxOMr3SYcPAkGxJI0/5LN/smc="/>
+            <table:column id="c_com_hpe_ao_domain_framework_TransactionLog_logUser" property="logUser" z="ksbrRwKXj8qtQmKAOX8gkvQxR4Q="/>
+            <table:column date="true" dateTimePattern="${transactionLog_logtimestamp_date_format}" id="c_com_hpe_ao_domain_framework_TransactionLog_logTimestamp" property="logTimestamp" z="r31VI3oCWrEwGczXnJiAIwUQgFM="/>
+        </table:table>
+    </page:list>
+</div>

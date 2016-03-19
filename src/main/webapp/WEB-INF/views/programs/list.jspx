@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hpe_ao_domain_transaction_Program" items="${programs}" z="j1ZS7vQ+lvYEeREhL8rVUIsB03A=">
+        <table:table data="${programs}" id="l_com_hpe_ao_domain_transaction_Program" path="/programs" z="0RC7i7H5wVOCdMgl766FFxuFjuQ=">
+            <table:column id="c_com_hpe_ao_domain_transaction_Program_name" property="name" z="h1Br14qvR10/PboI7u3gEiBSTXA="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Program_description" property="description" z="K34lKL2wUsZ8QFa8cLv52klcpTo="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Program_tag" property="tag" z="WNAQngmeoBtiNa91WMnnlXFVNQs="/>
+            <table:column id="c_com_hpe_ao_domain_transaction_Program_status" property="status" z="pJu45QMPi9/+2gIX8YQgACQ5RIU="/>
+            <table:column date="true" dateTimePattern="${program_startdatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Program_startDateBaseline" property="startDateBaseline" z="wXHAMGzZX5RfoXJbv7j7/33NOHU="/>
+            <table:column date="true" dateTimePattern="${program_enddatebaseline_date_format}" id="c_com_hpe_ao_domain_transaction_Program_endDateBaseline" property="endDateBaseline" z="L+dJX4kPeNLxQVdYXoRimV7jP9c="/>
+        </table:table>
+    </page:list>
+</div>
